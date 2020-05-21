@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,13 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- API key JavaScript configuration file and moment.js -->
-    <script src="./api-key.js"></script>
-    <script src="./assets/js/moment.js"></script>
 
     <title>Weather Dashboard
     </title>
@@ -43,7 +42,8 @@
                             <input type="text" class="form-control" id="city-input" />
                         </div>
                         <div class="col-2 text-right">
-                            <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            <button id="search-button" type="submit" class="btn btn-primary"><i
+                                    class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </form>
@@ -52,7 +52,8 @@
                     <div class="col-12">
                         <ul id="city-list" class="list-group">
                         </ul>
-                        <button id="clear-cities" class="btn btn-primary btn-lg btn-block mt-3">Clear Searched Cities</button>
+                        <button id="clear-cities" class="btn btn-primary btn-lg btn-block mt-3">Clear Searched
+                            Cities</button>
                     </div>
                 </div>
             </div>
@@ -63,12 +64,14 @@
                         <div id="current-weather" class="p-4">
                             <div class="row">
                                 <div class="col-12">
-                                    <h2 id="city-name" class="d-inline">Search for a city on the left to get started.</h2>
+                                    <h2 id="city-name" class="d-inline">Search for a city on the left to get started.
+                                    </h2>
                                     <img id="weather-icon" class="d-inline" />
-                                    <p id="temp"></p>
-                                    <p id="humidity"></p>
-                                    <p id="wind-speed"></p>
-                                    <p id="uv-p" class="d-none">UV Index: <span id="uv-index" class="bg-danger text-white p-2"></span></p>
+                                    <p id="temp">Temp</p>
+                                    <p id="humidity">Humidity</p>
+                                    <p id="wind-speed">Wind-speed</p>
+                                    <p id="uv-p" class="d-none">
+                                        <span id="uv-index class="bg-danger text-white p-2">UV Index:</span></p>
                                 </div>
                             </div>
                         </div>
@@ -88,11 +91,19 @@
         </div>
     </div>
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/43422e6c9e.js" crossorigin="anonymous"></script>
-    <script src=" assets/js/script.js "></script>
+    <script src="./api-key.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="./assets/js/script.js "></script>
 </body>
 
 </html>
