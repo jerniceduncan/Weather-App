@@ -6,6 +6,9 @@
 
 ![alt-text](https://github.com/jerniceduncan/Weather-App/blob/master/assets/images/06-Server-Side-APIs_02-Homework_Assets_06-server-side-apis-homework-demo.png)
 
+![alt text](https://jerniceduncan.github.io/Weather-App/) 
+
+
 ## 📝 Table of Contents
 
 - [About](#about)
