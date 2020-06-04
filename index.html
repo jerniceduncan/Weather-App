@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -9,83 +8,36 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <link rel="stylesheet" herf="./assets/css/style.css"
   <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <header class="col-12 text-center p-3">
-                <h1><i class="fas fa-cloud"></i>Weather Dashboard<i class="fas fa-sun"></i></h1>
-            </header>
+  <header class="container-fluid text-center text-white bg-dark p-2">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-lg-3 bg-light">
+        <h5 class="mt-1">Search for a City:</h5>
+        <div class="form-inline form-group">
+          <input class="form-control" type="text" id="search-value" />
+          <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
         </div>
 
-        <div class="row">
-            <div class="col-3 search-column p-3">
-                <div class="row">
-                    <div class="col-12">
-                        <h3>Search for a City:</h3>
-                    </div>
-                </div>
+        <ul class="list-group history"></ul>
+      </aside>
 
-                <form>
-                    <div class="form-row mb-3">
-                        <div class="col-10">
-                            <input type="text" class="form-control" id="city-input" />
-                        </div>
-                        <div class="col-2 text-right">
-                            <button id="search-button" type="submit" class="btn btn-primary"><i
-                                    class="fas fa-search"></i></button>
-                        </div>
-                    </div>
-                </form>
-
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="city-list" class="list-group">
-                        </ul>
-                        <button id="clear-cities" class="btn btn-primary btn-lg btn-block mt-3">Clear Searched
-                            Cities</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-9">
-                <div class="row">
-                    <div class="col-12">
-                        <div id="current-weather" class="p-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h2 id="city-name" class="d-inline">Search for a city on the left to get started.
-                                    </h2>
-                                    <img id="weather-icon" class="d-inline" />
-                                    <p id="temp">Temp</p>
-                                    <p id="humidity">Humidity</p>
-                                    <p id="wind-speed">Wind-speed</p>
-                                    <p id="uv-p" class="d-none">
-                                        <span id="uv-index class="bg-danger text-white p-2">UV Index:</span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row p-4">
-                            <div class="col-12">
-                                <h2>5-Day Forecast:</h2>
-                            </div>
-                        </div>
-
-                        <div id="forecast" class="row">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="col-lg-9">
+        <div id="today" class="mt-3"></div>
+        <div id="forecast" class="mt-3"></div>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src='./assets/js/script.js'></script>
-  </body>
+  </div>
 
-  </html>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
